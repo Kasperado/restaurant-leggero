@@ -1,0 +1,323 @@
+*{
+  box-sizing: border-box;
+}
+
+body,html{
+  margin: 0px;
+  padding: 0px;
+}
+
+/* ARROWS */
+.arrow1{
+	position: absolute;
+	color: white;
+	font-size: 40px;
+	font-weight: bold;
+	animation-iteration-count: infinite;
+	cursor: pointer;
+  animation-duration: 1s;
+}
+
+.arrow1{
+  left: 49%;
+  top: 95%;
+  animation-name: ar1;
+}
+@keyframes ar1 {
+  0%{top:93%}
+  50%{top:90%}
+  100%{top:93%}
+}
+
+
+/* img,logo,some text */
+.logo,.offer,.contact{
+  float: left;
+}
+
+.logo{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image: url("img/background_logo_m.jpeg");
+  background-repeat: no-repeat;
+}
+
+.logotext{
+  color: white;
+  width: auto;
+  height: auto;
+  font-family: 'Fresca', sans-serif;
+  font-style: italic;
+  text-shadow: 1px 1px 0px black;
+  position: absolute;
+  left: 5%;
+  text-align: center;
+}
+
+.name{
+  font-size: 40px;
+}
+
+.quote{
+  font-size: 30px;
+}
+
+.self_ad{
+  font-size: 28px;
+}
+
+/* Offer */
+.offer{
+  width: 100%;
+  background-color: #1f1f1f;
+  text-align: center;
+}
+
+/* Offer - about us */
+.whoweare{
+  margin: auto;
+  padding-top: 80px;
+  font-size: 40px;
+  font-family: 'Fresca', sans-serif;
+  color: white;
+}
+
+.about{
+  width: 100%;
+  color: white;
+  height: auto;
+  padding: 20px;
+  margin: auto;
+  font-size: 20px;
+  font-family: 'Fresca', sans-serif;
+}
+
+/* Offer.this */
+.whatweoffer{
+  margin: auto;
+  font-size: 40px;
+  font-family: 'Fresca', sans-serif;
+  color: white;
+}
+
+.offblock{
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.of{
+  width: 90%;
+  height: auto;
+  background-color: #2f2f2f;
+  margin: auto;
+  margin-top: 3%;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+      /* Inside of of*/
+      .icon{
+          width: 100%;
+          height: 20vh;
+      }
+
+      img{
+        height: 100%;
+		    padding: 16px;
+      }
+
+      .title{
+        margin: auto;
+        padding: 10px;
+        color: white;
+        font-size: 30px;
+        font-family: 'Fresca', sans-serif;
+      }
+
+      .description{
+        margin: auto;
+        padding: 10px;
+        color: white;
+        font-size: 16px;
+        font-family: 'Fresca', sans-serif;
+      }
+
+
+/* Contact */
+.contact{
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 10px;
+  text-align: center;
+}
+
+.contact_info{
+  width: 100%;
+  padding-top: 40px;
+  margin: auto;
+  color: black;
+  font-size: 40px;
+  font-family: 'Fresca', sans-serif;
+}
+
+.allinfo{
+  width: 100%;
+}
+
+
+.info_map{
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  float: none;
+}
+
+.info{
+  width: 100%;
+  margin: auto;
+  color: black;
+  font-size: 30px;
+  font-family: 'Fresca', sans-serif;
+}
+
+.map{
+  display: none;
+  float: none;
+}
+
+.form{
+  width:100%;
+  float: none;
+}
+
+.contactus{
+  width: 100%;
+  margin: auto;
+  color: black;
+  font-size: 40px;
+  font-family: 'Fresca', sans-serif;
+}
+
+form{
+  padding: 10px;
+}
+
+input{
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-family: 'Fresca', sans-serif;
+  border-radius: 6px;
+}
+
+input:focus{
+  background-color: #ffffaa;
+}
+
+textarea{
+  resize: horizontal;
+  min-height: 10vh;
+  padding: 5px;
+  width: 100%;
+  font-family: 'Fresca', sans-serif;
+  border-radius: 6px;
+}
+
+textarea:focus{
+  background-color: #ffffaa;
+}
+
+@media only screen and (min-width: 682px) {
+
+  .logotext{
+    width: 50%;
+    text-align: left;
+  }
+
+  .about{
+    width: 90%;
+  }
+
+  .info{
+    padding-bottom: 30px;
+  }
+
+  .map{
+    display: inherit;
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 800px) {
+
+.logo{
+  background-image: url("img/background_logo.jpeg");
+}
+
+.of{
+  width: 31%;
+  height: auto;
+  background-color: #2f2f2f;
+  float: left;
+  padding: 10px;
+  margin: 1%;
+  border-radius: 6px;
+}
+
+      /* Inside of of*/
+
+      .title{
+        font-size: 3.5vw;
+      }
+
+      .description{
+        font-size: 20px;
+      }
+
+@media only screen and (min-width: 1025px) {
+
+
+
+  .name{
+    font-size: 5vw;
+  }
+
+  .quote{
+    font-size: 3vw;
+  }
+
+  .self_ad{
+    font-size: 2vw;
+  }
+
+  .about{
+    width: 50%;
+  }
+
+  .info_map{
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    float: left;
+  }
+
+  .form{
+    width:50%;
+    float: left;
+  }
+
+}
+
+
+
+@media only screen and (min-width: 1366px) {
+  .description{
+    font-size: 26px;
+  }
+
+}

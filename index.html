@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Restaurant LEGGERO</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Fresca" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="Shortcut icon" href="img/party.png" />
+	<meta charset="utf-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+
+<!-- First block - img,logo -->
+<div class="logo">
+
+	<div class="logotext">
+		<div class="name">Restaurant LEGGERO</div>
+		<div class="quote">Best place for family dinner!</div>
+
+		<div class="self_ad">
+			<div class="ad1">Low prices &#10004;</div>
+			<div class="ad2">Great meals &#10004;</div>
+			<div class="ad3">Perfect location &#10004;</div>
+		</div>
+	</div>
+
+	<div class="arrow1">&#709;</div>
+
+</div>
+
+<!-- about us,Catering,parties,reservation -->
+<div class="offer">
+
+<div class="whoweare">WHO WE ARE?</div>
+	<div class="about">
+		<span>
+			We are a little restaurant located near the center of an S-City.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</span>
+	</div>
+
+<div class="whatweoffer">WHAT WE OFFER?</div>
+
+	<div class="offblock">
+
+		<!-- Catering -->
+		<div class="of">
+			<div class="icon"><img src="img/catering.png"></div>
+			<span class="title">CATERING</span>
+			<div class="description">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+			</div>
+		</div>
+		<!-- Parties -->
+		<div class="of">
+			<div class="icon"><img src="img/party.png"></div>
+			<span class="title">PARTY</span>
+			<div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+				</div>
+		</div>
+		<!-- Reservation -->
+		<div class="of">
+			<div class="icon"><img src="img/reservation.png"></div>
+			<span class="title">RESERVATION</span>
+			<div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+				</div>
+		</div>
+
+	</div>
+
+</div>
+
+<!-- Contact adress, google map, form for parties and reservation -->
+<div class="contact">
+
+		<div class="contact_info">CONTACT INFO</div>
+
+<div class="allinfo">
+	<div class="info_map">
+		<div class="info">
+				EMAIL : rest@jk.com<br>
+				PHONE : 6D7 35P 3E2<br>
+				ADDRESS : 129 Lafayette St New York, NY 10013<br>
+				OPEN HOURS : Mon-Fri 12:00-22:00<br>
+		</div>
+		<div class="map" id="map">
+
+		</div>
+		<script>
+		function myMap() {
+			var mapOptions = {
+					center: new google.maps.LatLng(40.718812, -74.000076),
+					zoom: 12,
+					mapTypeId: google.maps.MapTypeId.HYBRID
+			}
+
+			var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+		}
+		</script>
+		<script>
+		function myMap() {
+		  var myCenter = new google.maps.LatLng(40.718812, -74.000076);
+		  var mapCanvas = document.getElementById("map");
+		  var mapOptions = {center: myCenter, zoom: 14};
+		  var map = new google.maps.Map(mapCanvas, mapOptions);
+		  var marker = new google.maps.Marker({position:myCenter});
+		  marker.setMap(map);
+		}
+		</script>
+		<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCq16GJWXu0ySRPpCp3ZsslKjiuda-T8hE&callback=myMap">
+		</script>
+	</div>
+
+		<div class="contactus">CONTACT US</div>
+
+		<div class="form">
+			<form>
+				<input type="text" placeholder="Email">
+				<input type="text" placeholder="Telephone number">
+				<input type="text" placeholder="Subject...">
+				<textarea placeholder="Your message..."></textarea>
+				<input type="submit">
+			</form>
+		</div>
+
+	</div>
+</div>
+</body>
+</html>
